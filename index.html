@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
-
+<style>#arjsDebugUIContainer{display: none !important;} .a-enter-vr{display: none !important;}</style>
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
-	<a-scene  arjs='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
-<a-image src="https://preview.ibb.co/c96qiS/andina1.png" width="1.5" height="1.2"></a-image>
-		<a-marker-camera type='pattern' patternUrl='https://studiohow.github.io/pattern-marker.patt'></a-marker-camera>
-
+	<a-scene  arjs='sourceType: webcam; detectionMode: mono; maxDetectionRate: 60; canvasWidth: 240; canvasHeight: 180'>
+<a-image src="https://preview.ibb.co/c96qiS/andina1.png" width="1.5" height="1.2"><!--<a-animation attribute="rotation" to="0 180 0" dur="10000" easing='linear' repeat="indefinite"></a-animation>--></a-image>
+		<a-marker-camera preset='hiro'></a-marker-camera>
 		
 	</a-scene>
 </body>
 </html>
+
 
